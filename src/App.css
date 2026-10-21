@@ -1,0 +1,125 @@
+.page { max-width: 760px; margin: 0 auto; padding: 16px; }
+header h1 { font-size: 1.4rem; margin: 0 0 4px; }
+header p { margin: 0 0 12px; color: var(--muted); }
+.map { width: 100%; height: auto; display: block; }
+.county { stroke: var(--bg); stroke-width: 1; cursor: pointer; transition: filter .12s; }
+.county:hover, .county:focus-visible { filter: brightness(1.25); outline: none; stroke: var(--fg); stroke-width: 2; }
+.inset-box { fill: var(--card); stroke: var(--line); }
+.inset-label { font-size: 12px; fill: var(--muted); }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 16px; list-style: none; padding: 0; margin: 12px 0; font-size: .9rem; }
+.swatch { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+footer { color: var(--muted); font-size: .8rem; border-top: 1px solid var(--line); margin-top: 16px; padding-top: 8px; }
+footer a { color: inherit; }
+.dialog { width: min(560px, calc(100vw - 32px)); border: 1px solid var(--line); border-radius: 12px; padding: 16px; background: var(--card); color: var(--fg); }
+.dialog::backdrop { background: rgba(0,0,0,.45); }
+.dialog-head { display: flex; justify-content: space-between; align-items: center; }
+.dialog-head h2 { margin: 0; font-size: 1.15rem; }
+.dialog-head button { border: 0; background: none; color: var(--fg); font-size: 1.6rem; line-height: 1; cursor: pointer; padding: 4px 8px; }
+.dialog-sub { margin: 2px 0 8px; color: var(--muted); font-size: .85rem; }
+.candidates { list-style: none; margin: 0; padding: 0; max-height: 60vh; overflow: auto; }
+.candidates li { border-top: 1px solid var(--line); }
+.cand-row { display: flex; align-items: center; gap: 10px; width: 100%; padding: 10px 4px; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.cand-row:hover, .cand-row:focus-visible { background: var(--bg); outline: none; }
+.emblem { width: 28px; height: 28px; flex: none; object-fit: contain; border-radius: 50%; }
+.emblem-ind { background: #9aa0a6; opacity: .5; }
+.emblem-text { display: inline-flex; align-items: center; justify-content: center; color: #fff; font-size: .6rem; font-weight: 700; }
+.cand-name { font-weight: 600; }
+.cand-party { color: var(--muted); font-size: .85rem; margin-left: auto; }
+.tag { font-size: .7rem; padding: 1px 6px; border-radius: 8px; border: 1px solid var(--line); color: var(--muted); }
+.tag-incumbent { background: var(--focus); border-color: var(--focus); color: #fff; }
+
+.inset { cursor: pointer; }
+.inset:hover .inset-box, .inset:focus-visible .inset-box { stroke: var(--fg); stroke-width: 2; }
+.inset:focus-visible { outline: none; }
+
+.back { border: 0; background: none; color: var(--focus); cursor: pointer; padding: 4px 0; font: inherit; }
+.profile-name { display: flex; align-items: center; gap: 10px; margin: 8px 0; font-size: 1.1rem; }
+.notice { font-size: .8rem; color: var(--muted); margin: 0 0 12px; }
+.empty { color: var(--muted); font-size: .9rem; }
+section h4 { margin: 16px 0 6px; font-size: .95rem; }
+.legal-note { font-size: .8rem; color: var(--muted); margin: 0 0 6px; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+.chip { border: 1px solid var(--line); background: none; color: inherit; border-radius: 14px; padding: 2px 12px; font: inherit; cursor: pointer; }
+.chip.on { background: var(--focus); border-color: var(--focus); color: #fff; }
+.filters select { border: 1px solid var(--line); background: var(--card); color: inherit; border-radius: 14px; padding: 2px 8px; font: inherit; }
+.entries { list-style: none; margin: 0; padding: 0; max-height: 50vh; overflow: auto; }
+.entries li { padding: 10px 0; border-top: 1px solid var(--line); }
+.entry-meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: .8rem; color: var(--muted); }
+.entry-summary { margin: 4px 0; }
+.entry-source { margin: 0; font-size: .8rem; color: var(--muted); }
+.entry-source a { color: var(--focus); }
+.entry-report { margin-left: 8px; }
+.cat-政績 { border-color: #1b9431; color: #1b9431; }
+.cat-爭議 { border-color: #c0392b; color: #c0392b; }
+.cat-事蹟 { border-color: #5f6b7a; }
+.tag-unopened { margin-left: 6px; }
+
+.tag-status { background: var(--bg); color: var(--fg); }
+.dispute { margin: 4px 0 6px; font-size: .85rem; }
+.dispute summary { cursor: pointer; color: var(--focus); }
+.dispute dl { margin: 6px 0 0; padding: 8px 10px; background: var(--bg); border-radius: 8px; }
+.dispute dt { margin-top: 8px; font-weight: 600; font-size: .75rem; color: var(--muted); }
+.dispute dt:first-child { margin-top: 0; }
+.dispute dd { margin: 2px 0 0; overflow-wrap: anywhere; }
+.dispute ul { margin: 0; padding-left: 1.1em; }
+.dispute a { color: var(--focus); }
+.status-official { background: #1b9431; border-color: #1b9431; color: #fff; }
+
+.unrecorded { margin: 12px 0; font-size: .85rem; color: var(--muted); }
+.unrecorded summary { cursor: pointer; color: var(--focus); }
+.unrecorded ul { padding-left: 1.1em; }
+.unrecorded li { margin: 6px 0; }
+.unrecorded a { margin-left: 6px; color: var(--focus); }
+
+.bill-zone { margin: 24px 0; padding-top: 12px; border-top: 1px solid var(--line); }
+.bill-zone h2 { font-size: 1.1rem; margin: 0 0 6px; }
+.bill-intro { color: var(--muted); font-size: .85rem; margin: 0 0 12px; }
+.bill { border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; margin: 8px 0; background: var(--card); }
+.bill summary { cursor: pointer; display: flex; flex-direction: column; gap: 2px; }
+.bill-dates { font-size: .8rem; color: var(--muted); }
+.bill-what, .bill-votes { font-size: .88rem; margin: 8px 0; }
+.bill-points { padding-left: 0; list-style: none; margin: 0; font-size: .88rem; }
+.bill-points li { margin: 8px 0; overflow-wrap: anywhere; }
+.bill-kind { display: inline-block; font-size: .72rem; padding: 1px 6px; border-radius: 8px; border: 1px solid var(--line); margin-right: 4px; }
+.kind-官方認定 { background: #1b9431; border-color: #1b9431; color: #fff; }
+.bill-links { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: .8rem; margin: 6px 0 0; }
+.bill-links a { color: var(--focus); }
+
+.map-foot { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; flex-wrap: wrap; }
+.why-news { margin-left: auto; padding: 6px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--fg); cursor: pointer; font-size: .9rem; }
+.why-news:focus-visible, .cov-leg:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.cov-dialog { width: min(820px, calc(100vw - 32px)); max-height: calc(100vh - 32px); }
+.cov-dialog h3 { margin: 18px 0 6px; font-size: 1rem; }
+.cov-note { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-size: .88rem; }
+.cov-sub { color: var(--muted); font-size: .85rem; margin: 2px 0 6px; }
+.cov-spread { display: inline-flex; gap: 6px; align-items: center; font-size: .85rem; margin-bottom: 4px; }
+.cov-chart { width: 100%; height: auto; display: block; }
+.cov-grid { stroke: var(--line); stroke-width: 1; }
+.cov-zero { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 4 3; }
+.cov-tick { fill: var(--muted); font-size: 12px; }
+.cov-point { cursor: pointer; }
+.cov-point:focus-visible { outline: none; stroke: var(--focus); stroke-width: 2; }
+.cov-legend { list-style: none; margin: 8px 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 6px; align-items: center; }
+.cov-group { width: 100%; color: var(--muted); font-size: .8rem; margin-top: 4px; }
+.cov-leg { display: inline-flex; gap: 4px; align-items: center; padding: 3px 8px; border: 1px solid var(--line); border-radius: 999px; background: var(--card); color: var(--fg); cursor: pointer; font-size: .85rem; }
+.cov-leg small { color: var(--muted); }
+.cov-leg.on { border-color: var(--focus); background: var(--bg); }
+.cov-detail { min-height: 4.5em; border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; font-size: .88rem; }
+.cov-detail p { margin: 3px 0; }
+.cov-hint { color: var(--muted); }
+.cov-table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+.cov-table th, .cov-table td { border-bottom: 1px solid var(--line); padding: 6px 4px; text-align: left; vertical-align: top; }
+.cov-chip { display: inline-block; margin: 2px 4px 2px 0; padding: 1px 8px; border: 1px solid var(--line); border-radius: 999px; color: var(--fg); text-decoration: none; font-size: .8rem; }
+
+.cov-wrap { position: relative; }
+.cov-tip { position: absolute; transform: translate(-50%, calc(-100% - 10px)); max-width: min(320px, 80%); background: var(--fg); color: var(--bg); padding: 5px 8px; border-radius: 6px; font-size: .8rem; line-height: 1.35; pointer-events: none; z-index: 2; }
+.cov-point:hover { stroke: var(--fg); stroke-width: 1.5; }
+.cov-all { font-weight: 600; }
+
+.cov-lead { margin: 0 0 14px; font-size: .92rem; line-height: 1.6; }
+.cov-dialog section { margin: 0 0 22px; }
+.cov-dialog details { margin: 0 0 8px; border-top: 1px solid var(--line); padding: 8px 0; }
+.cov-dialog summary { cursor: pointer; font-weight: 600; font-size: .95rem; }
+.cov-dialog details ul { margin: 8px 0 0; padding-left: 1.2em; font-size: .88rem; line-height: 1.6; }
+.cov-scroll { overflow-x: auto; }
+.cov-scroll .cov-table th { white-space: nowrap; }
