@@ -15,7 +15,7 @@ const violenceEntry = (name: string): Entry => ({
   date: '2026-02-12',
   summary: summary(name),
   category: '爭議',
-  domains: ['法律制度', '治安司法'],
+  domains: ['法律制度'],
   context: '議會或立法院提案',
   source: SRC,
   dispute: {

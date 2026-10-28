@@ -5,4 +5,8 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   base: '/taiwan-candidate-map/',
   plugins: [react()],
+  build: {
+    // 首頁是推薦問卷(index.html),地圖在 map.html
+    rollupOptions: { input: { index: 'index.html', map: 'map.html' } },
+  },
 })
