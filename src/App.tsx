@@ -136,7 +136,7 @@ export default function App() {
         </p>
         <p>
           發現錯誤或不實,請至
-          <a href="https://github.com/MingI-Yang/taiwan-candidate-map/issues/new" target="_blank" rel="noreferrer">GitHub 回報</a>。
+          <a href="https://github.com/Cat2758Rabbit8964/taiwan-candidate-map/issues/new" target="_blank" rel="noreferrer">GitHub 回報</a>。
           查證屬實後,我們會在 7 日內更正或移除,並更新下方日期。
         </p>
         <p>最後更新:{DATA_UPDATED}</p>

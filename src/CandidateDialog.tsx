@@ -6,7 +6,7 @@ import type { Category, Domain, Dispute, Entry, KinRecord, LegalRecord, Source }
 
 const collator = new Intl.Collator('zh-Hant-u-co-stroke')
 /** 錯誤回報入口 */
-const REPORT_URL = 'https://github.com/MingI-Yang/taiwan-candidate-map/issues/new'
+const REPORT_URL = 'https://github.com/Cat2758Rabbit8964/taiwan-candidate-map/issues/new'
 
 function sortCandidates(list: Candidate[]) {
   return list
